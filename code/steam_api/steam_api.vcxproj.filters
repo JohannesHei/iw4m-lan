@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Steam">
+      <UniqueIdentifier>{61f15245-3908-45e6-82b9-572d0fdd93e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Steam">
+      <UniqueIdentifier>{74269faf-39f3-4781-863e-4dfba7a2509f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Main">
+      <UniqueIdentifier>{14ca2582-58df-4233-a99c-5d5895fdf09f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Main">
+      <UniqueIdentifier>{3966fc28-6390-46ee-9609-4f8f3eeb2329}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Patches">
+      <UniqueIdentifier>{d58224e9-b0b0-4fcd-922c-6d81f47e232c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Steam\Interfaces">
+      <UniqueIdentifier>{1e419f40-921a-4083-af9e-5a32472a2d40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Steam\Interfaces">
+      <UniqueIdentifier>{c77f0a50-5086-41cf-a086-3273da848115}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Patches">
+      <UniqueIdentifier>{f2c32a6b-d80a-453b-b6fa-7e5e28c08b86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Patches\Server List">
+      <UniqueIdentifier>{dc2efa5c-81a0-40c8-9f15-7274d8d03464}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="SteamAPI.cpp">
+      <Filter>Source Files\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamBase.cpp">
+      <Filter>Source Files\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="StdInc.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Hooking.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Flags.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="IniReader.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamUtils005.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamFriends005.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamGameServer009.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamMasterServerUpdater001.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamMatchmaking007.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamNetworking003.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamRemoteStorage002.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamUser012.cpp">
+      <Filter>Source Files\Steam\Interfaces</Filter>
+    </ClCompile>
+    <ClCompile Include="IW4.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="HardwareInfo.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CrashHandler.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="SteamProxy.cpp">
+      <Filter>Source Files\Steam</Filter>
+    </ClCompile>
+    <ClCompile Include="hidecode.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2VA.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Stats.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Redirect.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Prefix.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Networking.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Load.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Branding.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2AssetRestrict.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2ClientConsole.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Commands.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Dvars.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2ConsoleTitle.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Console.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2LocalizedStrings.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2XPBar.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2ScoreboardInfo.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2Modding.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2LogInitGame.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+    <ClCompile Include="PatchMW2SuicideMessages.cpp">
+      <Filter>Source Files\Patches</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="SteamBase.h">
+      <Filter>Header Files\Steam</Filter>
+    </ClInclude>
+    <ClInclude Include="StdInc.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Hooking.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Flags.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="IniReader.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamFriends005.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamUtils005.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamGameServer009.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamMasterServerUpdater001.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamMatchmaking007.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamNetworking003.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamRemoteStorage002.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="SteamUser012.h">
+      <Filter>Header Files\Steam\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="IW4.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="HardwareInfo.h">
+      <Filter>Header Files\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchIW4UIScripts.h">
+      <Filter>Header Files\Patches\Server List</Filter>
+    </ClInclude>
+    <ClInclude Include="PatchIW4ServerList.h">
+      <Filter>Header Files\Patches\Server List</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

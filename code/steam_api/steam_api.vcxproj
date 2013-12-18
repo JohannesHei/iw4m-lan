@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Normal|Win32">
+      <Configuration>Normal</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EF6AF76D-40D1-45B5-B665-D3004F3EE9A8}</ProjectGuid>
+    <RootNamespace>steam_api</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectName>steam_api</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.40219.1</_ProjectFileVersion>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" />
+    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" />
+    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'" />
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">
+    <PreBuildEvent>
+      <Command>
+      </Command>
+    </PreBuildEvent>
+    <ClCompile>
+      <AdditionalIncludeDirectories>$(SolutionDir)\dependencies\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdInc.h</PrecompiledHeaderFile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>ws2_32.lib;winmm.lib;libcurl.lib;wldap32.lib;dbghelp.lib;credui.lib;shlwapi.lib;pdcurses.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\dependencies\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>
+      </LinkTimeCodeGeneration>
+      <FixedBaseAddress>
+      </FixedBaseAddress>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CrashHandler.cpp" />
+    <ClCompile Include="Flags.cpp" />
+    <ClCompile Include="hidecode.cpp" />
+    <ClCompile Include="Hooking.cpp" />
+    <ClCompile Include="HardwareInfo.cpp" />
+    <ClCompile Include="IniReader.cpp" />
+    <ClCompile Include="IW4.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="PatchMW2.cpp" />
+    <ClCompile Include="PatchMW2AssetRestrict.cpp" />
+    <ClCompile Include="PatchMW2Branding.cpp" />
+    <ClCompile Include="PatchMW2Commands.cpp" />
+    <ClCompile Include="PatchMW2ClientConsole.cpp" />
+    <ClCompile Include="PatchMW2Console.cpp" />
+    <ClCompile Include="PatchMW2ConsoleTitle.cpp" />
+    <ClCompile Include="PatchMW2Dvars.cpp" />
+    <ClCompile Include="PatchMW2Prefix.cpp" />
+    <ClCompile Include="PatchMW2Redirect.cpp" />
+    <ClCompile Include="PatchMW2LocalizedStrings.cpp" />
+    <ClCompile Include="PatchMW2Modding.cpp" />
+    <ClCompile Include="PatchMW2Networking.cpp" />
+    <ClCompile Include="PatchMW2ScoreboardInfo.cpp" />
+    <ClCompile Include="PatchMW2Stats.cpp" />
+    <ClCompile Include="PatchMW2SuicideMessages.cpp" />
+    <ClCompile Include="PatchMW2VA.cpp" />
+    <ClCompile Include="PatchMW2LogInitGame.cpp" />
+    <ClCompile Include="PatchMW2Load.cpp" />
+    <ClCompile Include="PatchMW2XPBar.cpp" />
+    <ClCompile Include="StdInc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Normal|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="SteamAPI.cpp" />
+    <ClCompile Include="SteamBase.cpp" />
+    <ClCompile Include="SteamFriends005.cpp" />
+    <ClCompile Include="SteamGameServer009.cpp" />
+    <ClCompile Include="SteamMasterServerUpdater001.cpp" />
+    <ClCompile Include="SteamMatchmaking007.cpp" />
+    <ClCompile Include="SteamNetworking003.cpp" />
+    <ClCompile Include="SteamProxy.cpp" />
+    <ClCompile Include="SteamRemoteStorage002.cpp" />
+    <ClCompile Include="SteamUser012.cpp" />
+    <ClCompile Include="SteamUtils005.cpp" />
+    <ClCompile Include="Utils.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Flags.h" />
+    <ClInclude Include="HardwareInfo.h" />
+    <ClInclude Include="Hooking.h" />
+    <ClInclude Include="IniReader.h" />
+    <ClInclude Include="IW4.h" />
+    <ClInclude Include="PatchIW4ServerList.h" />
+    <ClInclude Include="PatchIW4UIScripts.h" />
+    <ClInclude Include="StdInc.h" />
+    <ClInclude Include="SteamBase.h" />
+    <ClInclude Include="SteamFriends005.h" />
+    <ClInclude Include="SteamGameServer009.h" />
+    <ClInclude Include="SteamMasterServerUpdater001.h" />
+    <ClInclude Include="SteamMatchmaking007.h" />
+    <ClInclude Include="SteamNetworking003.h" />
+    <ClInclude Include="SteamRemoteStorage002.h" />
+    <ClInclude Include="SteamUser012.h" />
+    <ClInclude Include="SteamUtils005.h" />
+    <ClInclude Include="Utils.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
